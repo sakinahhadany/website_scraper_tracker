@@ -1,0 +1,20 @@
+1|81|Oscar|Piastri|McLaren|Mercedes|72|1:38''29.849|0|0|186.758|2|25|0|0
+2|1|Max|Verstappen|Red Bull|Red Bull|72|1:38''31.120|1.271|1.271|186.718|2|18|0|0
+3|6|Isack|Hadjar|RB|Honda|72|1:38''33.082|3.233|1.962|186.656|2|15|0|0
+4|63|George|Russell|Mercedes|Mercedes|72|1:38''35.503|5.654|2.421|186.579|2|12|0|0
+5|23|Alexander|Albon|Williams|Mercedes|72|1:38''36.176|6.327|0.673|186.558|2|10|0|0
+6|87|Oliver|Bearman|Haas|Ferrari|72|1:38''38.893|9.044|2.717|186.472|1|8|0|0
+7|18|Lance|Stroll|Aston Martin|Mercedes|72|1:38''39.346|9.497|0.453|186.458|2|6|0|0
+8|14|Fernando|Alonso|Aston Martin|Mercedes|72|1:38''41.558|11.709|2.212|186.388|2|4|0|0
+9|22|Yuki|Tsunoda|Red Bull|Red Bull|72|1:38''43.446|13.597|1.888|186.329|2|2|0|0
+10|31|Esteban|Ocon|Haas|Ferrari|72|1:38''43.912|14.063|0.466|186.314|1|1|0|0
+11|43|Franco|Colapinto|Alpine|Renault|72|1:38''44.360|14.511|0.448|186.300|3|0|0|0
+12|30|Liam|Lawson|RB|Honda|72|1:38''46.912|17.063|2.552|186.220|3|0|0|0
+13|55|Carlos|Sainz|Williams|Mercedes|72|1:38''47.225|17.376|0.313|186.210|4|0|0|0
+14|27|Nicolas|Hülkenberg|Sauber|Ferrari|72|1:38''49.574|19.725|2.349|186.137|2|0|0|0
+15|5|Gabriel|Bortoleto|Sauber|Ferrari|72|1:38''51.414|21.565|1.840|186.079|2|0|0|0
+16|12|Andrea|Kimi|Mercedes|Mercedes|72|1:38''51.878|22.029|0.464|186.064|3|0|0|0
+17|10|Pierre|Gasly|Alpine|Renault|72|1:38''53.478|23.629|1.600|186.014|1|0|0|0
+18|4|Lando|Norris|McLaren|Mercedes|64|1:26''08.487|8|8|189.814|2|0|0|0
+0|16|Charles|Leclerc|Ferrari|Ferrari|52|1:08''17.018|20|12|194.547|2|0|0|0
+0|44|Lewis|Hamilton|Ferrari|Ferrari|22|28''05.478|50|30|199.998|0|0|0|0
