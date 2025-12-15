@@ -1,0 +1,2001 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>Home | results.motorsport.com</title>
+    <meta name="keywords" content="Home | results.motorsport.com">
+    <meta name="description" content="Home | results.motorsport.com">
+    <link rel="SHORTCUT ICON" href="/themes/def_motor/a_mode_public/images/favicon.ico" />
+            <link type="text/css" rel="stylesheet" href="//results.motorsport.com/themes/def_motor/a_lay_wide/css/style.css">
+            <link type="text/css" rel="stylesheet" href="//results.motorsport.com/themes/def_author/c_arts/css/c_arts.css">
+            <link type="text/css" rel="stylesheet" href="//results.motorsport.com/vendors/jQuery/jquery-ui-1.11.0.smothness/jquery-ui.css">
+                <script type="text/javascript" src="//results.motorsport.com/vendors/jQuery/jquery-1.8.2.js"></script>
+            <script type="text/javascript" src="//results.motorsport.com/vendors/jQuery/jquery-ui-1.11.0.smothness/jquery-ui.js"></script>
+       
+</head>
+<body>
+
+<div id="wrapper">
+        <div id="header">
+    <div class="fL">
+         <div class="logo"><a href="//results.motorsport.com/" title="На головну">results.motorsport.com</a>
+         </div>
+     </div>
+    <div class="fR">
+         <div class="user_panel">
+          [ <a href='//results.motorsport.com/login'>Enter</a> | <a href='//results.motorsport.com/login/registration'>Registration</a> ]
+         </div>
+    </div>
+</div>
+<ul class="top_menu">
+                <li class="current"><a href="//results.motorsport.com/" >Home</a></li> <!-- стиль текущего -->
+                        <li><a href="//results.motorsport.com/timeline/">Timeline</a></li>
+        </ul>	<div id="middle">
+
+		
+<div id="content">
+<div class="page_body">
+     <style>
+    .error_mess{
+        color: red;
+        border: solid 1px red;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .results{
+        border-left: solid 1px #ccc;
+        border-collapse: collapse;
+    }
+    
+    .results tr:nth-child(even){
+        background-color: #eee;
+    }
+    
+    .results tr:hover{
+        background-color: #ffa;
+    }
+    
+    .results th{
+        border-right: solid 1px #ccc;
+        padding: 2px;
+        font-size: 8pt;
+        padding: 4px;
+    }
+    
+    .results td{
+        border-right: solid 1px #ccc;
+        font-size: 8pt;
+        padding: 2px 3px;
+        white-space:  nowrap;
+    }
+
+    .results td input{
+        font-size: 8pt;
+    }
+    .results button{
+        font-size: 8pt;
+    }
+    
+    .results_comp td,
+    .results_comp th{
+        padding: 2px !important;
+    }
+
+    .approved{
+        border: solid 2px #282;
+    }
+    
+    .sid_find_form input{
+        padding: 5px;
+        vertical-align: top;
+        width: 60px;
+    }
+    .sid_find_form button{
+        padding: 3px 5px;
+        margin-left: 5px;
+        cursor: pointer;
+    }
+
+    
+</style>
+
+
+<table><tr valign="top"><td><!-- layout -->
+            
+<form action="/main/m/" method="GET" class="sid_find_form">
+    <input id="in_sid" type="text" name="sid" value="58179" title="sid">
+    <button type="submit" title="find by sid">Go</button>
+    <button id="b_copy_sid_url" title="copy sid url">Url</button>
+</form>
+<script type="text/javascript">
+    $(function(){
+        $("#b_copy_sid_url").click(function(){
+            var input = $("#in_sid");
+            var sid = input.val();
+            var url = "https://results.motorsport.com//main/m/?sid="+sid;
+            input.val(url);
+            input.select();
+            document.execCommand("copy");
+            input.val(sid);
+            alert('session url copied to clipboard');
+            return false;
+        });
+    });
+</script>
+<br>
+
+            
+<select name="series" onchange="window.location.href = '/main/m/'+value">
+    
+    <option value="206" >ASIAN LE MANS</option>
+    
+    <option value="30" >BTCC</option>
+    
+    <option value="45" >DTM</option>
+    
+    <option value="104" >EUROPEAN LE MANS</option>
+    
+    <option value="6216" >F1 Academy</option>
+    
+    <option value="54"  selected>FORMULA 1</option>
+    
+    <option value="208" >FORMULA E</option>
+    
+    <option value="73" >GP2</option>
+    
+    <option value="74" >GP3</option>
+    
+    <option value="211" >GT-MASTERS</option>
+    
+    <option value="207" >IMSA</option>
+    
+    <option value="87" >INDY LIGHTS</option>
+    
+    <option value="86" >INDYCAR</option>
+    
+    <option value="212" >MOTO2</option>
+    
+    <option value="213" >MOTO3</option>
+    
+    <option value="112" >MOTOGP</option>
+    
+    <option value="1772" >MX2</option>
+    
+    <option value="1771" >MXGP</option>
+    
+    <option value="119" >NASCAR SPRINT CUP</option>
+    
+    <option value="126" >NASCAR TRUCK</option>
+    
+    <option value="124" >NASCAR XFINITY</option>
+    
+    <option value="852" >STOCK CAR BRAZIL</option>
+    
+    <option value="1101" >SUPER FORMULA</option>
+    
+    <option value="172" >SUPER GT</option>
+    
+    <option value="6098" >TCR AUSTRALIA</option>
+    
+    <option value="18" >V8 SUPERCARS</option>
+    
+    <option value="205" >WEC</option>
+    
+    <option value="160" >WORLD CHALLENGE</option>
+    
+    <option value="210" >WORLD RALLYCROSS</option>
+    
+    <option value="194" >WORLD SUPERBIKE</option>
+    
+    <option value="193" >WRC</option>
+    
+    <option value="5551" >WTCR</option>
+</select>
+<br><br>
+
+<select name="championship" onchange="window.location.href = '/main/m/54/'+value">
+    <option value="367"  selected> 2025</option>
+    <option value="336" > 2024</option>
+    <option value="307" > 2023</option>
+    <option value="280" > 2022</option>
+    <option value="242" > 2021</option>
+    <option value="213" > 2020</option>
+    <option value="189" > 2019</option>
+    <option value="165" > 2018</option>
+    <option value="127" > 2017</option>
+    <option value="76" > 2016</option>
+    <option value="66" > 2015</option>
+    <option value="65" > 2014</option>
+    <option value="64" > 2013</option>
+    <option value="63" > 2012</option>
+    <option value="62" > 2011</option>
+    <option value="61" > 2010</option>
+    <option value="60" > 2009</option>
+    <option value="59" > 2008</option>
+    <option value="58" > 2007</option>
+    <option value="57" > 2006</option>
+    <option value="56" > 2005</option>
+    <option value="55" > 2004</option>
+    <option value="54" > 2003</option>
+    <option value="53" > 2002</option>
+    <option value="52" > 2001</option>
+    <option value="51" > 2000</option>
+    <option value="50" > 1999</option>
+    <option value="49" > 1998</option>
+    <option value="48" > 1997</option>
+    <option value="47" > 1996</option>
+    <option value="46" > 1995</option>
+    <option value="45" > 1994</option>
+    <option value="44" > 1993</option>
+    <option value="43" > 1992</option>
+    <option value="42" > 1991</option>
+    <option value="41" > 1990</option>
+    <option value="40" > 1989</option>
+    <option value="39" > 1988</option>
+    <option value="38" > 1987</option>
+    <option value="37" > 1986</option>
+    <option value="36" > 1985</option>
+    <option value="35" > 1984</option>
+    <option value="34" > 1983</option>
+    <option value="33" > 1982</option>
+    <option value="32" > 1981</option>
+    <option value="31" > 1980</option>
+    <option value="30" > 1979</option>
+    <option value="29" > 1978</option>
+    <option value="28" > 1977</option>
+    <option value="27" > 1976</option>
+    <option value="26" > 1975</option>
+    <option value="25" > 1974</option>
+    <option value="24" > 1973</option>
+    <option value="23" > 1972</option>
+    <option value="22" > 1971</option>
+    <option value="21" > 1970</option>
+    <option value="20" > 1969</option>
+    <option value="19" > 1968</option>
+    <option value="18" > 1967</option>
+    <option value="17" > 1966</option>
+    <option value="16" > 1965</option>
+    <option value="15" > 1964</option>
+    <option value="14" > 1963</option>
+    <option value="13" > 1962</option>
+    <option value="12" > 1961</option>
+    <option value="11" > 1960</option>
+    <option value="10" > 1959</option>
+    <option value="9" > 1958</option>
+    <option value="8" > 1957</option>
+    <option value="7" > 1956</option>
+    <option value="6" > 1955</option>
+    <option value="5" > 1954</option>
+    <option value="4" > 1953</option>
+    <option value="3" > 1952</option>
+    <option value="2" > 1951</option>
+    <option value="1" > 1950</option>
+</select>    
+<br>
+<br>
+
+    <a href="/main/m/54/367/-2">Drivers Championship</a>
+    <br>
+    <a href="/main/m/54/367/-3">Constructors Championship</a>
+    <br>
+    <a href="/main/m/54/367/-10">Drivers penalty points</a>
+    <br>
+    <a href="/main/m/54/367/-20">Drivers reprimands</a>
+    <br>
+<br>    <a href="/main/m/54/367/12651"> Bahrain</a>
+     <div style="font-size:8px; padding-left: 10px; margin:-5px 0 -2px;">28.02.2025</div>
+    <a href="/main/m/54/367/12627"> Australia</a>
+     <div style="font-size:8px; padding-left: 10px; margin:-5px 0 -2px;">16.03.2025</div>
+    <a href="/main/m/54/367/12628"> China</a>
+     <div style="font-size:8px; padding-left: 10px; margin:-5px 0 -2px;">23.03.2025</div>
+    <a href="/main/m/54/367/12629"> Japan</a>
+     <div style="font-size:8px; padding-left: 10px; margin:-5px 0 -2px;">06.04.2025</div>
+    <a href="/main/m/54/367/12630"> Bahrain</a>
+     <div style="font-size:8px; padding-left: 10px; margin:-5px 0 -2px;">13.04.2025</div>
+    <a href="/main/m/54/367/12631"> Saudi Arabia</a>
+     <div style="font-size:8px; padding-left: 10px; margin:-5px 0 -2px;">20.04.2025</div>
+    <a href="/main/m/54/367/12632"> Miami</a>
+     <div style="font-size:8px; padding-left: 10px; margin:-5px 0 -2px;">04.05.2025</div>
+    <a href="/main/m/54/367/12633"> Emilia Romagna</a>
+     <div style="font-size:8px; padding-left: 10px; margin:-5px 0 -2px;">18.05.2025</div>
+    <a href="/main/m/54/367/12634"> Monaco</a>
+     <div style="font-size:8px; padding-left: 10px; margin:-5px 0 -2px;">25.05.2025</div>
+    <a href="/main/m/54/367/12635"> Spain</a>
+     <div style="font-size:8px; padding-left: 10px; margin:-5px 0 -2px;">01.06.2025</div>
+    <a href="/main/m/54/367/12636"> Canada</a>
+     <div style="font-size:8px; padding-left: 10px; margin:-5px 0 -2px;">15.06.2025</div>
+    <a href="/main/m/54/367/12637"> Austria</a>
+     <div style="font-size:8px; padding-left: 10px; margin:-5px 0 -2px;">29.06.2025</div>
+    <b> Great Britain</b> <div style="font-size:8px; padding-left: 10px; margin:-5px 0 -2px;">06.07.2025</div>
+    <a href="/main/m/54/367/12639"> Belgium</a>
+     <div style="font-size:8px; padding-left: 10px; margin:-5px 0 -2px;">27.07.2025</div>
+    <a href="/main/m/54/367/12640"> Hungary</a>
+     <div style="font-size:8px; padding-left: 10px; margin:-5px 0 -2px;">03.08.2025</div>
+    <a href="/main/m/54/367/12641"> Netherlands</a>
+     <div style="font-size:8px; padding-left: 10px; margin:-5px 0 -2px;">31.08.2025</div>
+    <a href="/main/m/54/367/12642"> Italy</a>
+     <div style="font-size:8px; padding-left: 10px; margin:-5px 0 -2px;">07.09.2025</div>
+    <a href="/main/m/54/367/12643"> Azerbaijan</a>
+     <div style="font-size:8px; padding-left: 10px; margin:-5px 0 -2px;">21.09.2025</div>
+    <a href="/main/m/54/367/12644"> Singapore</a>
+     <div style="font-size:8px; padding-left: 10px; margin:-5px 0 -2px;">05.10.2025</div>
+    <a href="/main/m/54/367/12645"> USA</a>
+     <div style="font-size:8px; padding-left: 10px; margin:-5px 0 -2px;">19.10.2025</div>
+    <a href="/main/m/54/367/12646"> Mexico</a>
+     <div style="font-size:8px; padding-left: 10px; margin:-5px 0 -2px;">26.10.2025</div>
+    <a href="/main/m/54/367/12647"> Brazil</a>
+     <div style="font-size:8px; padding-left: 10px; margin:-5px 0 -2px;">09.11.2025</div>
+    <a href="/main/m/54/367/12648"> Las Vegas</a>
+     <div style="font-size:8px; padding-left: 10px; margin:-5px 0 -2px;">22.11.2025</div>
+    <a href="/main/m/54/367/12649"> Qatar</a>
+     <div style="font-size:8px; padding-left: 10px; margin:-5px 0 -2px;">30.11.2025</div>
+    <a href="/main/m/54/367/12650"> Abu Dhabi</a>
+     <div style="font-size:8px; padding-left: 10px; margin:-5px 0 -2px;">07.12.2025</div>
+    <a href="/main/m/54/367/12847"> Abu Dhabi</a>
+     <div style="font-size:8px; padding-left: 10px; margin:-5px 0 -2px;">09.12.2025</div>
+
+
+</td><td id="td_menu_holder"><!-- vertical menu -->
+</td><td><!-- layout -->
+<h2>12. Great Britain / Aramco British Grand Prix / Silverstone</h2>
+<div id="session_list">  | <a  href="/main/m/54/367/12638/-1">ENTRY LIST</a> | <a  href="/main/m/54/367/12638/58172">P1</a> | <a  href="/main/m/54/367/12638/58173">P2</a> | <a  href="/main/m/54/367/12638/58174">P3</a> | <a  href="/main/m/54/367/12638/58175">Q1</a> | <a  href="/main/m/54/367/12638/58176">Q2</a> | <a  href="/main/m/54/367/12638/58177">Q3</a> | <a  href="/main/m/54/367/12638/58178">GRID</a> | <b >RACE</b> | <a href="/main/m/54/367/12638/58179/2">TYRE HISTORY</a> | <a  href="/main/m/54/367/12638/58180">FASTEST LAPS</a> | <a  href="/main/m/54/367/12638/58181">PIT STOPS</a> | <a  href="/main/m/54/367/12638/58182">SPEEDS</a></div> <br>  
+
+<h2>RACE</h2>
+ &nbsp; <a href="/main/m/54/367/12638/58179/3">Data player</a>  &nbsp; <a href="/main/m/54/367/12638/58179/4">LIVE</a>  &nbsp; <a href="/main/m/54/367/12638/58179/5">LIVE 2</a>  &nbsp; <a href="/main/m/54/367/12638/58179/6">LV_5</a>  &nbsp; <a href="/main/m/54/367/12638/58179/7">DP_5</a> &nbsp;
+
+
+<a href="?v=4">Laps times</a>
+<br>
+
+<table><tr valign="top"><td>
+<table class="results tab_58179" >
+<tr valign="top">
+    
+<th align="right"
+>cla</th>
+    
+<th align="left"
+></th>
+    
+<th align="right"
+>#</th>
+    
+<th align="left"
+>driver</th>
+    
+<th align="left"
+>chassis</th>
+    
+<th align="left"
+>engine</th>
+    
+<th align="right"
+>laps</th>
+    
+<th align="right"
+>time</th>
+    
+<th align="right"
+>gap</th>
+    
+<th align="right"
+>int</th>
+    
+<th align="right"
+ style="background-color: #fcc">km/h</th>
+    
+<th align="right"
+>pits</th>
+    
+<th align="left"
+>retirement</th>
+    
+<th align="right"
+>pts</th>
+    
+<th align="right"
+>pen</th>
+    
+<th align="right"
+ style="background-color: #fcc">reprim</th>
+    
+<th align="left"
+>tyres change</th>
+    
+<th align="left"
+>b_tyres</th>
+    
+</tr>
+  
+<tr valign="top">
+    
+<td align="right"
+    
+>1</td>
+    
+<td align="left"
+    
+></td>
+    
+<td align="right"
+    
+>4</td>
+    
+<td align="left"
+    
+><span style="width:22px;display:inline-block"><img src="/files/motor/flag/GBR.png" alt="GBR"></span> Lando Norris</td>
+    
+<td align="left"
+    
+>McLaren</td>
+    
+<td align="left"
+    
+>Mercedes</td>
+    
+<td align="right"
+    
+>52</td>
+    
+<td align="right"
+    
+>1:37'15.735</td>
+    
+<td align="right"
+    
+></td>
+    
+<td align="right"
+    
+></td>
+    
+<td align="right"
+ style="background-color: #fcc"    
+></td>
+    
+<td align="right"
+    
+>2</td>
+    
+<td align="left"
+    
+></td>
+    
+<td align="right"
+    
+>25</td>
+    
+<td align="right"
+    
+></td>
+    
+<td align="right"
+ style="background-color: #fcc"    
+></td>
+    
+<td align="left"
+    
+>in-11,in-33,mn-8</td>
+    
+<td align="left"
+    
+>M</td>
+        
+</tr>
+  
+<tr valign="top">
+    
+<td align="right"
+    
+>2</td>
+    
+<td align="left"
+    
+></td>
+    
+<td align="right"
+    
+>81</td>
+    
+<td align="left"
+    
+><span style="width:22px;display:inline-block"><img src="/files/motor/flag/AUS.png" alt="AUS"></span> Oscar Piastri</td>
+    
+<td align="left"
+    
+>McLaren</td>
+    
+<td align="left"
+    
+>Mercedes</td>
+    
+<td align="right"
+    
+>52</td>
+    
+<td align="right"
+    
+>1:37'22.547</td>
+    
+<td align="right"
+    
+>6.812</td>
+    
+<td align="right"
+    
+>6.812</td>
+    
+<td align="right"
+ style="background-color: #fcc"    
+></td>
+    
+<td align="right"
+    
+>2</td>
+    
+<td align="left"
+    
+></td>
+    
+<td align="right"
+    
+>18</td>
+    
+<td align="right"
+    
+>2</td>
+    
+<td align="right"
+ style="background-color: #fcc"    
+></td>
+    
+<td align="left"
+    
+>in-11,in-32,mn-9</td>
+    
+<td align="left"
+    
+>M</td>
+        
+</tr>
+  
+<tr valign="top">
+    
+<td align="right"
+    
+>3</td>
+    
+<td align="left"
+    
+></td>
+    
+<td align="right"
+    
+>27</td>
+    
+<td align="left"
+    
+><span style="width:22px;display:inline-block"><img src="/files/motor/flag/GER.png" alt="GER"></span> Nicolas Hülkenberg</td>
+    
+<td align="left"
+    
+>Sauber</td>
+    
+<td align="left"
+    
+>Ferrari</td>
+    
+<td align="right"
+    
+>52</td>
+    
+<td align="right"
+    
+>1:37'50.477</td>
+    
+<td align="right"
+    
+>34.742</td>
+    
+<td align="right"
+    
+>27.930</td>
+    
+<td align="right"
+ style="background-color: #fcc"    
+></td>
+    
+<td align="right"
+    
+>2</td>
+    
+<td align="left"
+    
+></td>
+    
+<td align="right"
+    
+>15</td>
+    
+<td align="right"
+    
+></td>
+    
+<td align="right"
+ style="background-color: #fcc"    
+></td>
+    
+<td align="left"
+    
+>in-9,in-33,mn-10</td>
+    
+<td align="left"
+    
+>M</td>
+        
+</tr>
+  
+<tr valign="top">
+    
+<td align="right"
+    
+>4</td>
+    
+<td align="left"
+    
+></td>
+    
+<td align="right"
+    
+>44</td>
+    
+<td align="left"
+    
+><span style="width:22px;display:inline-block"><img src="/files/motor/flag/GBR.png" alt="GBR"></span> Lewis Hamilton</td>
+    
+<td align="left"
+    
+>Ferrari</td>
+    
+<td align="left"
+    
+>Ferrari</td>
+    
+<td align="right"
+    
+>52</td>
+    
+<td align="right"
+    
+>1:37'55.547</td>
+    
+<td align="right"
+    
+>39.812</td>
+    
+<td align="right"
+    
+>5.070</td>
+    
+<td align="right"
+ style="background-color: #fcc"    
+></td>
+    
+<td align="right"
+    
+>2</td>
+    
+<td align="left"
+    
+></td>
+    
+<td align="right"
+    
+>12</td>
+    
+<td align="right"
+    
+></td>
+    
+<td align="right"
+ style="background-color: #fcc"    
+></td>
+    
+<td align="left"
+    
+>in-11,in-30,su-14</td>
+    
+<td align="left"
+    
+>S</td>
+        
+</tr>
+  
+<tr valign="top">
+    
+<td align="right"
+    
+>5</td>
+    
+<td align="left"
+    
+></td>
+    
+<td align="right"
+    
+>1</td>
+    
+<td align="left"
+    
+><span style="width:22px;display:inline-block"><img src="/files/motor/flag/HOL.png" alt="HOL"></span> Max Verstappen</td>
+    
+<td align="left"
+    
+>Red Bull</td>
+    
+<td align="left"
+    
+>Red Bull</td>
+    
+<td align="right"
+    
+>52</td>
+    
+<td align="right"
+    
+>1:38'12.516</td>
+    
+<td align="right"
+    
+>56.781</td>
+    
+<td align="right"
+    
+>16.969</td>
+    
+<td align="right"
+ style="background-color: #fcc"    
+></td>
+    
+<td align="right"
+    
+>2</td>
+    
+<td align="left"
+    
+></td>
+    
+<td align="right"
+    
+>10</td>
+    
+<td align="right"
+    
+></td>
+    
+<td align="right"
+ style="background-color: #fcc"    
+></td>
+    
+<td align="left"
+    
+>in-11,in-30,mn-11</td>
+    
+<td align="left"
+    
+>M</td>
+        
+</tr>
+  
+<tr valign="top">
+    
+<td align="right"
+    
+>6</td>
+    
+<td align="left"
+    
+></td>
+    
+<td align="right"
+    
+>10</td>
+    
+<td align="left"
+    
+><span style="width:22px;display:inline-block"><img src="/files/motor/flag/FRA.png" alt="FRA"></span> Pierre Gasly</td>
+    
+<td align="left"
+    
+>Alpine</td>
+    
+<td align="left"
+    
+>Renault</td>
+    
+<td align="right"
+    
+>52</td>
+    
+<td align="right"
+    
+>1:38'15.592</td>
+    
+<td align="right"
+    
+>59.857</td>
+    
+<td align="right"
+    
+>3.076</td>
+    
+<td align="right"
+ style="background-color: #fcc"    
+></td>
+    
+<td align="right"
+    
+>2</td>
+    
+<td align="left"
+    
+></td>
+    
+<td align="right"
+    
+>8</td>
+    
+<td align="right"
+    
+></td>
+    
+<td align="right"
+ style="background-color: #fcc"    
+></td>
+    
+<td align="left"
+    
+>in-11,in-30,mn-11</td>
+    
+<td align="left"
+    
+>M</td>
+        
+</tr>
+  
+<tr valign="top">
+    
+<td align="right"
+    
+>7</td>
+    
+<td align="left"
+    
+></td>
+    
+<td align="right"
+    
+>18</td>
+    
+<td align="left"
+    
+><span style="width:22px;display:inline-block"><img src="/files/motor/flag/CAN.png" alt="CAN"></span> Lance Stroll</td>
+    
+<td align="left"
+    
+>Aston Martin</td>
+    
+<td align="left"
+    
+>Mercedes</td>
+    
+<td align="right"
+    
+>52</td>
+    
+<td align="right"
+    
+>1:38'16.338</td>
+    
+<td align="right"
+    
+>1'00.603</td>
+    
+<td align="right"
+    
+>0.746</td>
+    
+<td align="right"
+ style="background-color: #fcc"    
+></td>
+    
+<td align="right"
+    
+>3</td>
+    
+<td align="left"
+    
+></td>
+    
+<td align="right"
+    
+>6</td>
+    
+<td align="right"
+    
+></td>
+    
+<td align="right"
+ style="background-color: #fcc"    
+></td>
+    
+<td align="left"
+    
+>in-6,sn-4,in-31,sn-11</td>
+    
+<td align="left"
+    
+>S</td>
+        
+</tr>
+  
+<tr valign="top">
+    
+<td align="right"
+    
+>8</td>
+    
+<td align="left"
+    
+></td>
+    
+<td align="right"
+    
+>23</td>
+    
+<td align="left"
+    
+><span style="width:22px;display:inline-block"><img src="/files/motor/flag/THA.png" alt="THA"></span> Alexander Albon</td>
+    
+<td align="left"
+    
+>Williams</td>
+    
+<td align="left"
+    
+>Mercedes</td>
+    
+<td align="right"
+    
+>52</td>
+    
+<td align="right"
+    
+>1:38'19.870</td>
+    
+<td align="right"
+    
+>1'04.135</td>
+    
+<td align="right"
+    
+>3.532</td>
+    
+<td align="right"
+ style="background-color: #fcc"    
+></td>
+    
+<td align="right"
+    
+>2</td>
+    
+<td align="left"
+    
+></td>
+    
+<td align="right"
+    
+>4</td>
+    
+<td align="right"
+    
+></td>
+    
+<td align="right"
+ style="background-color: #fcc"    
+></td>
+    
+<td align="left"
+    
+>in-12,in-30,mn-10</td>
+    
+<td align="left"
+    
+>M</td>
+        
+</tr>
+  
+<tr valign="top">
+    
+<td align="right"
+    
+>9</td>
+    
+<td align="left"
+    
+></td>
+    
+<td align="right"
+    
+>14</td>
+    
+<td align="left"
+    
+><span style="width:22px;display:inline-block"><img src="/files/motor/flag/ESP.png" alt="ESP"></span> Fernando Alonso</td>
+    
+<td align="left"
+    
+>Aston Martin</td>
+    
+<td align="left"
+    
+>Mercedes</td>
+    
+<td align="right"
+    
+>52</td>
+    
+<td align="right"
+    
+>1:38'21.593</td>
+    
+<td align="right"
+    
+>1'05.858</td>
+    
+<td align="right"
+    
+>1.723</td>
+    
+<td align="right"
+ style="background-color: #fcc"    
+></td>
+    
+<td align="right"
+    
+>2</td>
+    
+<td align="left"
+    
+></td>
+    
+<td align="right"
+    
+>2</td>
+    
+<td align="right"
+    
+></td>
+    
+<td align="right"
+ style="background-color: #fcc"    
+></td>
+    
+<td align="left"
+    
+>in-11,in-26,mu-16</td>
+    
+<td align="left"
+    
+>M</td>
+        
+</tr>
+  
+<tr valign="top">
+    
+<td align="right"
+    
+>10</td>
+    
+<td align="left"
+    
+></td>
+    
+<td align="right"
+    
+>63</td>
+    
+<td align="left"
+    
+><span style="width:22px;display:inline-block"><img src="/files/motor/flag/GBR.png" alt="GBR"></span> George Russell</td>
+    
+<td align="left"
+    
+>Mercedes</td>
+    
+<td align="left"
+    
+>Mercedes</td>
+    
+<td align="right"
+    
+>52</td>
+    
+<td align="right"
+    
+>1:38'26.409</td>
+    
+<td align="right"
+    
+>1'10.674</td>
+    
+<td align="right"
+    
+>4.816</td>
+    
+<td align="right"
+ style="background-color: #fcc"    
+></td>
+    
+<td align="right"
+    
+>2</td>
+    
+<td align="left"
+    
+></td>
+    
+<td align="right"
+    
+>1</td>
+    
+<td align="right"
+    
+></td>
+    
+<td align="right"
+ style="background-color: #fcc"    
+></td>
+    
+<td align="left"
+    
+>hn-10,in-28,hn-14</td>
+    
+<td align="left"
+    
+>H</td>
+        
+</tr>
+  
+<tr valign="top">
+    
+<td align="right"
+    
+>11</td>
+    
+<td align="left"
+    
+></td>
+    
+<td align="right"
+    
+>87</td>
+    
+<td align="left"
+    
+><span style="width:22px;display:inline-block"><img src="/files/motor/flag/GBR.png" alt="GBR"></span> Oliver Bearman</td>
+    
+<td align="left"
+    
+>Haas</td>
+    
+<td align="left"
+    
+>Ferrari</td>
+    
+<td align="right"
+    
+>52</td>
+    
+<td align="right"
+    
+>1:38'27.830</td>
+    
+<td align="right"
+    
+>1'12.095</td>
+    
+<td align="right"
+    
+>1.421</td>
+    
+<td align="right"
+ style="background-color: #fcc"    
+></td>
+    
+<td align="right"
+    
+>2</td>
+    
+<td align="left"
+    
+></td>
+    
+<td align="right"
+    
+></td>
+    
+<td align="right"
+    
+></td>
+    
+<td align="right"
+ style="background-color: #fcc"    
+></td>
+    
+<td align="left"
+    
+>hn-10,in-31,mn-11</td>
+    
+<td align="left"
+    
+>M</td>
+        
+</tr>
+  
+<tr valign="top">
+    
+<td align="right"
+    
+>12</td>
+    
+<td align="left"
+    
+></td>
+    
+<td align="right"
+    
+>55</td>
+    
+<td align="left"
+    
+><span style="width:22px;display:inline-block"><img src="/files/motor/flag/ESP.png" alt="ESP"></span> Carlos Sainz Jr</td>
+    
+<td align="left"
+    
+>Williams</td>
+    
+<td align="left"
+    
+>Mercedes</td>
+    
+<td align="right"
+    
+>52</td>
+    
+<td align="right"
+    
+>1:38'32.327</td>
+    
+<td align="right"
+    
+>1'16.592</td>
+    
+<td align="right"
+    
+>4.497</td>
+    
+<td align="right"
+ style="background-color: #fcc"    
+></td>
+    
+<td align="right"
+    
+>2</td>
+    
+<td align="left"
+    
+></td>
+    
+<td align="right"
+    
+></td>
+    
+<td align="right"
+    
+></td>
+    
+<td align="right"
+ style="background-color: #fcc"    
+></td>
+    
+<td align="left"
+    
+>in-11,in-30,mn-11</td>
+    
+<td align="left"
+    
+>M</td>
+        
+</tr>
+  
+<tr valign="top">
+    
+<td align="right"
+    
+>13</td>
+    
+<td align="left"
+    
+></td>
+    
+<td align="right"
+    
+>31</td>
+    
+<td align="left"
+    
+><span style="width:22px;display:inline-block"><img src="/files/motor/flag/FRA.png" alt="FRA"></span> Esteban Ocon</td>
+    
+<td align="left"
+    
+>Haas</td>
+    
+<td align="left"
+    
+>Ferrari</td>
+    
+<td align="right"
+    
+>52</td>
+    
+<td align="right"
+    
+>1:38'33.036</td>
+    
+<td align="right"
+    
+>1'17.301</td>
+    
+<td align="right"
+    
+>0.709</td>
+    
+<td align="right"
+ style="background-color: #fcc"    
+></td>
+    
+<td align="right"
+    
+>2</td>
+    
+<td align="left"
+    
+></td>
+    
+<td align="right"
+    
+></td>
+    
+<td align="right"
+    
+></td>
+    
+<td align="right"
+ style="background-color: #fcc"    
+></td>
+    
+<td align="left"
+    
+>in-18,in-24,mn-10</td>
+    
+<td align="left"
+    
+>M</td>
+        
+</tr>
+  
+<tr valign="top">
+    
+<td align="right"
+    
+>14</td>
+    
+<td align="left"
+    
+></td>
+    
+<td align="right"
+    
+>16</td>
+    
+<td align="left"
+    
+><span style="width:22px;display:inline-block"><img src="/files/motor/flag/MON.png" alt="MON"></span> Charles Leclerc</td>
+    
+<td align="left"
+    
+>Ferrari</td>
+    
+<td align="left"
+    
+>Ferrari</td>
+    
+<td align="right"
+    
+>52</td>
+    
+<td align="right"
+    
+>1:38'40.212</td>
+    
+<td align="right"
+    
+>1'24.477</td>
+    
+<td align="right"
+    
+>7.176</td>
+    
+<td align="right"
+ style="background-color: #fcc"    
+></td>
+    
+<td align="right"
+    
+>2</td>
+    
+<td align="left"
+    
+></td>
+    
+<td align="right"
+    
+></td>
+    
+<td align="right"
+    
+></td>
+    
+<td align="right"
+ style="background-color: #fcc"    
+></td>
+    
+<td align="left"
+    
+>mn-10,in-32,su-13</td>
+    
+<td align="left"
+    
+>S</td>
+        
+</tr>
+  
+<tr valign="top">
+    
+<td align="right"
+    
+>15</td>
+    
+<td align="left"
+    
+></td>
+    
+<td align="right"
+    
+>22</td>
+    
+<td align="left"
+    
+><span style="width:22px;display:inline-block"><img src="/files/motor/flag/JPN.png" alt="JPN"></span> Yuki Tsunoda</td>
+    
+<td align="left"
+    
+>Red Bull</td>
+    
+<td align="left"
+    
+>Red Bull</td>
+    
+<td align="right"
+    
+>51</td>
+    
+<td align="right"
+    
+>1:37'47.985</td>
+    
+<td align="right"
+    
+>1 Lap</td>
+    
+<td align="right"
+    
+>1 Lap</td>
+    
+<td align="right"
+ style="background-color: #fcc"    
+></td>
+    
+<td align="right"
+    
+>2</td>
+    
+<td align="left"
+    
+></td>
+    
+<td align="right"
+    
+></td>
+    
+<td align="right"
+    
+>1</td>
+    
+<td align="right"
+ style="background-color: #fcc"    
+></td>
+    
+<td align="left"
+    
+>in-11,in-30,mn-10</td>
+    
+<td align="left"
+    
+>M</td>
+        
+</tr>
+  
+<tr valign="top">
+    
+<td align="right"
+    
+></td>
+    
+<td align="left"
+    
+>dnf</td>
+    
+<td align="right"
+    
+>12</td>
+    
+<td align="left"
+    
+><span style="width:22px;display:inline-block"><img src="/files/motor/flag/ITA.png" alt="ITA"></span> Andrea Kimi Antonelli</td>
+    
+<td align="left"
+    
+>Mercedes</td>
+    
+<td align="left"
+    
+>Mercedes</td>
+    
+<td align="right"
+    
+>23</td>
+    
+<td align="right"
+    
+>49'59.124</td>
+    
+<td align="right"
+    
+>29 Laps</td>
+    
+<td align="right"
+    
+>28 Laps</td>
+    
+<td align="right"
+ style="background-color: #fcc"    
+></td>
+    
+<td align="right"
+    
+>4</td>
+    
+<td align="left"
+    
+>Collision</td>
+    
+<td align="right"
+    
+></td>
+    
+<td align="right"
+    
+></td>
+    
+<td align="right"
+ style="background-color: #fcc"    
+></td>
+    
+<td align="left"
+    
+>in-2,hn-7,in-11,in-3</td>
+    
+<td align="left"
+    
+>H</td>
+        
+</tr>
+  
+<tr valign="top">
+    
+<td align="right"
+    
+></td>
+    
+<td align="left"
+    
+>dnf</td>
+    
+<td align="right"
+    
+>6</td>
+    
+<td align="left"
+    
+><span style="width:22px;display:inline-block"><img src="/files/motor/flag/FRA.png" alt="FRA"></span> Isack Hadjar</td>
+    
+<td align="left"
+    
+>RB</td>
+    
+<td align="left"
+    
+>Honda</td>
+    
+<td align="right"
+    
+>17</td>
+    
+<td align="right"
+    
+>36'03.387</td>
+    
+<td align="right"
+    
+>35 Laps</td>
+    
+<td align="right"
+    
+>6 Laps</td>
+    
+<td align="right"
+ style="background-color: #fcc"    
+></td>
+    
+<td align="right"
+    
+>1</td>
+    
+<td align="left"
+    
+>Collision</td>
+    
+<td align="right"
+    
+></td>
+    
+<td align="right"
+    
+></td>
+    
+<td align="right"
+ style="background-color: #fcc"    
+></td>
+    
+<td align="left"
+    
+>mn-10,in-7</td>
+    
+<td align="left"
+    
+>M</td>
+        
+</tr>
+  
+<tr valign="top">
+    
+<td align="right"
+    
+></td>
+    
+<td align="left"
+    
+>dnf</td>
+    
+<td align="right"
+    
+>5</td>
+    
+<td align="left"
+    
+><span style="width:22px;display:inline-block"><img src="/files/motor/flag/BRA.png" alt="BRA"></span> Gabriel Bortoleto</td>
+    
+<td align="left"
+    
+>Sauber</td>
+    
+<td align="left"
+    
+>Ferrari</td>
+    
+<td align="right"
+    
+>3</td>
+    
+<td align="right"
+    
+>6'49.103</td>
+    
+<td align="right"
+    
+>49 Laps</td>
+    
+<td align="right"
+    
+>14 Laps</td>
+    
+<td align="right"
+ style="background-color: #fcc"    
+></td>
+    
+<td align="right"
+    
+></td>
+    
+<td align="left"
+    
+>Spun off</td>
+    
+<td align="right"
+    
+></td>
+    
+<td align="right"
+    
+></td>
+    
+<td align="right"
+ style="background-color: #fcc"    
+></td>
+    
+<td align="left"
+    
+>mn-3</td>
+    
+<td align="left"
+    
+>M</td>
+        
+</tr>
+  
+<tr valign="top">
+    
+<td align="right"
+    
+></td>
+    
+<td align="left"
+    
+>dnf</td>
+    
+<td align="right"
+    
+>30</td>
+    
+<td align="left"
+    
+><span style="width:22px;display:inline-block"><img src="/files/motor/flag/NZL.png" alt="NZL"></span> Liam Lawson</td>
+    
+<td align="left"
+    
+>RB</td>
+    
+<td align="left"
+    
+>Honda</td>
+    
+<td align="right"
+    
+>0</td>
+    
+<td align="right"
+    
+></td>
+    
+<td align="right"
+    
+></td>
+    
+<td align="right"
+    
+></td>
+    
+<td align="right"
+ style="background-color: #fcc"    
+></td>
+    
+<td align="right"
+    
+></td>
+    
+<td align="left"
+    
+>Collision</td>
+    
+<td align="right"
+    
+></td>
+    
+<td align="right"
+    
+></td>
+    
+<td align="right"
+ style="background-color: #fcc"    
+></td>
+    
+<td align="left"
+    
+>in-0</td>
+    
+<td align="left"
+    
+></td>
+        
+</tr>
+  
+<tr valign="top">
+    
+<td align="right"
+    
+></td>
+    
+<td align="left"
+    
+>dns</td>
+    
+<td align="right"
+    
+>43</td>
+    
+<td align="left"
+    
+><span style="width:22px;display:inline-block"><img src="/files/motor/flag/ARG.png" alt="ARG"></span> Franco Colapinto</td>
+    
+<td align="left"
+    
+>Alpine</td>
+    
+<td align="left"
+    
+>Renault</td>
+    
+<td align="right"
+    
+></td>
+    
+<td align="right"
+    
+></td>
+    
+<td align="right"
+    
+></td>
+    
+<td align="right"
+    
+></td>
+    
+<td align="right"
+ style="background-color: #fcc"    
+></td>
+    
+<td align="right"
+    
+></td>
+    
+<td align="left"
+    
+></td>
+    
+<td align="right"
+    
+></td>
+    
+<td align="right"
+    
+></td>
+    
+<td align="right"
+ style="background-color: #fcc"    
+></td>
+    
+<td align="left"
+    
+>hn-0</td>
+    
+<td align="left"
+    
+></td>
+        
+</tr>
+    
+</table>
+            
+            
+
+            
+            
+
+</td><td>
+<!--<h3>Laps led:</h3>-->
+<table class="results" >
+    <tr><th>laps led</th><th>driver</th></tr>
+<tr>
+    <td align="right">1-7</td>
+    <td><span style="width:22px;display:inline-block"><img src="/files/motor/flag/HOL.png" alt="HOL"></span> Max Verstappen</td>
+</tr>
+<tr>
+    <td align="right">8-43</td>
+    <td><span style="width:22px;display:inline-block"><img src="/files/motor/flag/AUS.png" alt="AUS"></span> Oscar Piastri</td>
+</tr>
+<tr>
+    <td align="right">44-52</td>
+    <td><span style="width:22px;display:inline-block"><img src="/files/motor/flag/GBR.png" alt="GBR"></span> Lando Norris</td>
+</tr>
+</table>
+</td></tr></table>
+
+<br>
+
+<script type="text/javascript">
+    $(function(){
+        
+        $(".b_approve").click(function(){
+            var id = $(this).attr('data-id');
+            var val = $(this).attr('data-val');
+            var me = $(this);
+            $.post(
+                '/parser/ajax',
+                {'command':'toggle_approved' ,'id':id,'val':val},
+                function(data){
+                    if (data.error) alert(data.error);
+                    else{
+                        me.attr('data-val',data.val);
+                        if (data.val>0){
+                            me.text('To draft');
+                            $('.tab_'+id).addClass('approved');
+                        }
+                        else{
+                            me.text('Approve');
+                            $('.tab_'+id).removeClass('approved');
+                        }
+                    }
+                },
+                'json'
+            );
+            
+        });
+    });
+</script>
+
+
+       
+</td></tr></table><!-- layout -->            
+     </div>
+</div><!-- #content-->
+	</div><!-- #middle-->
+<div class="clear pT20"></div>
+<div id="footer">
+    <div class="coperight"></div>
+</div></div><!-- #wrapper -->
+</body>
+</html>
